@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing messages</title>
+  </head>
+  <body>
+    <script>
+      function message(e) {
+        console.log(e.data.m, e.data.d); // "app-ready" etc.
+      }
+
+      window.addEventListener("message", message, false);
+    </script>
+    <iframe src="https://custom.sumo.app"></iframe>
+  </body>
+</html>
